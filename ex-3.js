@@ -33,11 +33,20 @@ let getJohnOrders = () => {
 };
 
 // Start coding here
-async function getJohn() {
-  let profile = await getJohnProfile();
-  console.log(profile)
-  let orders = await getJohnOrders()
-  console.log(orders);
-} 
 
-getJohn()
+let displayJohnProfile = () => {
+  return getJohnProfile().then(data => {
+    console.log(data)
+    return data
+  })
+}
+
+let displayJohnOrders = () => {
+  return getJohnOrders().then(data => {
+    console.log(data)
+    return data
+  })
+}
+
+displayJohnProfile()
+  .then(() => displayJohnOrders())

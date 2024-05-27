@@ -19,5 +19,5 @@ async function displayJohnProfile(){
   console.log(johnProfile)
 }
 
-getJohnProfile().then(displayJohnProfile)
+displayJohnProfile()
 

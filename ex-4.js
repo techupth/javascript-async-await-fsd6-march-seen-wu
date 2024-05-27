@@ -12,6 +12,7 @@ let getJohnProfile = () => {
     );
   });
 };
+
 // Start coding here
 
 async function displayJohnProfile(){
@@ -20,4 +21,5 @@ async function displayJohnProfile(){
 }
 
 displayJohnProfile()
+
 

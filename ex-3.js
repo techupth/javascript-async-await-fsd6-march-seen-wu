@@ -33,3 +33,13 @@ let getJohnOrders = () => {
 };
 
 // Start coding here
+function displayJohnProfile(data) {
+  console.log(data);
+}
+function displayJohnOrders(data) {
+  console.log(data);
+}
+function onFailure(error) {
+  console.log(error);
+}
+getJohnProfile().then(displayJohnProfile).then(getJohnOrders).then(displayJohnOrders).catch(onFailure)
